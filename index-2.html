@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Small Medium</title>
+    <style>
+      @media screen and (max-width: 1400px) {
+        #carousel-right {
+          display: none;
+        }
+        #carousel {
+          padding: 2em 1em;
+        }
+      }
+      
+      @media screen and (min-width: 1400px) {
+        #carousel-left-button {
+          margin: 1em 0;
+          width: 20%;
+        }
+        #carousel {
+          margin: 2em 0;
+        }
+        #wave {
+          margin-top: -400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <section id="navbar">
+      <!-- <div
+        class="container align-items-center bg-danger justify-content-center"
+      >
+        <div class="row" id="menu">
+          <div class="col" id="menu-logo">
+            <div class="row">
+              <div class="col-1" id="menu-logo-img">
+                <img
+                  src="./medium.png"
+                  alt="logo"
+                  srcset=""
+                  class="w-100 h-100"
+                />
+              </div>
+              <div class="col-11" id="menu-logo-text">
+                <b>Small Medium</b>
+              </div>
+            </div>
+          </div>
+          <div class="col" id="menu-menus">
+            <div class="row">
+              <div class="col" id="menu-menus-ourStory">Our story</div>
+              <div class="col" id="menu-menus-membership">Membership</div>
+              <div class="col" id="menu-menus-write">Write</div>
+              <div class="col" id="menu-menus-signin">Sign In</div>
+              <div class="col" id="menu-menus-getStarted">
+                <button class="btn bg-secondary">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: #fdf3d3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./medium.png"
+              alt=""
+              width="25"
+              height="25"
+              class="d-inline-block align-text-top"
+            />
+            <b>Small Medium</b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul
+            class="nav justify-content-end navbar-nav collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary fw-bold"
+                aria-current="page"
+                href="#"
+                >Our Story</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-bold" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-bold" href="#">Write</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary fw-bold" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn text-secondary rounded-pill fw-bold"
+                style="background-color: #ced8e0"
+              >
+                Get Started
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr class="m-0" style="height: 0.15rem; opacity: 0.5" />
+      <div class="container-fluid">
+        <div class="container pt-2">
+          <div class="row" id="carousel">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row ps-2">
+                    <div class="col" id="carousel-left">
+                      <div class="row">
+                        <div class="col">
+                          <h1 class="display-3 fw-bold">
+                            Where good ideas find you.
+                          </h1>
+                          <!-- <h2>
+                            Where good
+                            <span class="d-block">ideas find you.</span>
+                          </h2> -->
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <p class="text-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi hic eius reprehenderit ad, quidem obcaecati
+                          praesentium voluptas. Soluta, veniam obcaecati.
+                          <a href="#">Learn more.</a>
+                        </p>
+                        <button
+                          class="btn border-2 border-warning w-25 rounded-pill ms-2"
+                        >
+                          Get Started
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col" id="carousel-right">
+                      <img
+                        src="./image1.jpg"
+                        alt="img-carousel"
+                        class="img-fluid"
+                        width="500"
+                        height="450"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row ps-2">
+                    <div class="col" id="carousel-left">
+                      <div class="row">
+                        <div class="col">
+                          <h1 class="display-3 fw-bold">
+                            Where good ideas find you.
+                          </h1>
+                        </div>
+                      </div>
+                      <div class="row mt-4 p-1">
+                        <p class="text-secondary">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Modi hic eius reprehenderit ad, quidem obcaecati
+                          praesentium voluptas. Soluta, veniam obcaecati.
+                          <a href="#">Learn more.</a>
+                        </p>
+                        <button
+                          class="btn border-2 border-warning w-25 rounded-pill ms-2 mt-2"
+                        >
+                          Get Started
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col" id="carousel-right">
+                      <img
+                        src="./image2.jpg"
+                        alt="img-carousel"
+                        class="img-fluid"
+                        width="500"
+                        height="450"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="col" id="carousel-left">
+              <div class="row">
+                <div class="col">
+                  <h2>Where good <span class="d-block">ideas find you.</span></h2>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <p class="text-secondary">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione cupiditate omnis eos nam,
+                  <ins>praesentium repellat.</ins>
+                </p>
+                <button
+                  class="btn border-2 border-warning w-25 rounded-pill ms-2"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <div class="col" id="carousel-right">
+              <img src="#" alt="img-carousel" class="img-fluid" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fdf3d3"
+          fill-opacity="1"
+          d="M0,288L1440,192L1440,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- TRANDING SECTION -->
+    <section id="tranding">
+      <div class="container">
+        <div class="row" id="tranding-title">
+          <p class="text-xl-start">Tranding on Small Medium</p>
+        </div>
+        <div class="row" id="tranding-content">
+          <div id="content-1" class="col-4">
+            <div class="row">
+              <div class="col-1" id="content-1-no">01</div>
+              <div class="col-11" id="content-1-content">
+                <div class="row">
+                  <div class="col" id="content-1-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1" id="content-2-no">04</div>
+              <div class="col-11" id="content-2-content">
+                <div class="row">
+                  <div class="col" id="content-2-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-4">
+            <div class="row">
+              <div class="col-1" id="content-1-no">02</div>
+              <div class="col-11" id="content-1-content">
+                <div class="row">
+                  <div class="col" id="content-1-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1" id="content-2-no">05</div>
+              <div class="col-11" id="content-2-content">
+                <div class="row">
+                  <div class="col" id="content-2-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content-1" class="col-4">
+            <div class="row">
+              <div class="col-1" id="content-1-no">03</div>
+              <div class="col-11" id="content-1-content">
+                <div class="row">
+                  <div class="col" id="content-1-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1" id="content-2-no">06</div>
+              <div class="col-11" id="content-2-content">
+                <div class="row">
+                  <div class="col" id="content-2-img-author">IMG | Author</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-title">Title</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-2-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- ARTICLE, DISCOVER and FOOTER SECTION -->
+    <section id="multi-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 bg-info p-3" id="article">
+            <div class="row bg-info mb-2">
+              <div class="col-7 bg-danger" id="contentful-1">
+                <div class="row">
+                  <div class="col" id="content-1-img-author">
+                    IMG | <b>Afif in Skilvul</b>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-title">
+                    <p>
+                      <b
+                        >How to use bootstrap for creating a responsive
+                        website</b
+                      >
+                    </p>
+                  </div>
+                  <div id="content-1-caption">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 bg-primary" id="contentful-1-img">
+                <img src="#" alt="img" srcset="" />
+              </div>
+            </div>
+            <div class="row bg-success">
+              <div class="col-7" id="contentful-1">
+                <div class="row">
+                  <div class="col" id="content-1-img-author">
+                    IMG | <b>Afif in Skilvul</b>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-title">
+                    <p>
+                      <b
+                        >How to use bootstrap for creating a responsive
+                        website</b
+                      >
+                    </p>
+                  </div>
+                  <div id="content-1-caption">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="row">
+                  <div class="col" id="content-1-datetime">
+                    Date and Time
+                    <nav>icon</nav>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 bg-warning" id="contentful-1-img">
+                <img src="#" alt="img" srcset="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-5" id="discover-and-footer">
+            <div class="row bg-success">
+              <div class="row" id="discover-title">
+                <div class="col">
+                  <p class="text-sm-start">
+                    <b>DISCOVER MORE OF WHAT MATTERS TO YOU</b>
+                  </p>
+                </div>
+              </div>
+              <div class="row gy-2" id="discover-topic">
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn border-secondary rounded">Topic</button>
+                </div>
+                <div class="col-4">
+                  <button class="btn"><ins>See all topics</ins></button>
+                </div>
+              </div>
+              <div class="row mt-2" id="subscribe">
+                <p class="text-md-start mb-0"><b>Subscribe for more</b></p>
+                <p class="text-sm-start mt-0">
+                  Get notified when we publish something new!
+                </p>
+                <div class="row" id="email-submit">
+                  <div class="col" id="input-email">
+                    <input
+                      type="text"
+                      placeholder="afifahmad@gmail.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col" id="btn-submit">
+                    <button class="btn bg-warning">Submit</button>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <div class="row bg-danger">
+              <div class="row">
+                <div class="row">
+                  <div class="col"><b>Help</b></div>
+                  <div class="col"><b>Status</b></div>
+                  <div class="col"><b>Writers</b></div>
+                  <div class="col"><b>Blog</b></div>
+                  <div class="col"><b>Privacy</b></div>
+                  <div class="col"><b>Term</b></div>
+                  <div class="col"><b>About</b></div>
+                </div>
+                <div class="row ms-1">Created with cinta by Afif</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
